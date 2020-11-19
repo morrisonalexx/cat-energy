@@ -49,85 +49,87 @@
       <div class="form-container form">
         <form class="form__inner" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="form__block">
-            <fieldset class="form-field">
-              <ul class="form-field__list">
-                <li class="form-field__item">
-                  <label class="form-field__label" for="name">Имя:<sup>*</sup></label>
-                  <input id="name" class="form-field__input" name="name" type="text" placeholder="Барсик" required>
+
+            <fieldset class="form__fieldset">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="name">Имя:<sup>*</sup></label>
+                  <input id="name" class="form__input" name="name" type="text" placeholder="Барсик" required>
                 </li>
-                <li class="form-field__list">
-                  <label class="form-field__label" for="name">Вес(кг):<sup>*</sup></label>
-                  <input id="name" class="form-field__input" name="name" type="text" placeholder="7" required>
+                <li class="form__list">
+                  <label class="form__label" for="weight">Вес(кг):<sup>*</sup></label>
+                  <input id="weight" class="form__input" name="weight" type="text" placeholder="7" required>
                 </li>
-                <li class="form-field__list">
-                  <label class="form-field__label" for="name">Возраст(лет):</label>
-                  <input id="name" class="form-field__input" name="name" type="text" placeholder="7">
+                <li class="form__list">
+                  <label class="form__label" for="age">Возраст(лет):</label>
+                  <input id="age" class="form__input" name="age" type="text" placeholder="7">
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form-field">
-              <ul class="form-field__list">
-                <li class="form-field__item">
-                  <input id="weigthloss" class="visually-hidden form-field__input form-field__input--radio" type="radio"
-                    name="program" value="weigthloss" checked>
-                  <label class="form-field__label" for="weigthloss">Похудение</label>
+            <fieldset class="form__fieldset">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input id="weigthloss" class="visually-hidden form__input form__radio" type="radio"
+                    name="weigthloss" value="weigthloss" checked>
+                  <label class="form__label" for="weigthloss">Похудение</label>
                 </li>
-                <li class="form-field__list">
-                  <input id="weightgain" class="visually-hidden form-field__input form-field__input--radio" type="radio"
-                    name="program" value="weightgain">
-                  <label class="form-field__label" for="weightgain">Набор массы</label>
+                <li class="form__list">
+                  <input id="weightgain" class="visually-hidden form__input form__radio" type="radio"
+                    name="weightgain" value="weightgain">
+                  <label class="form__label" for="weightgain">Набор массы</label>
                 </li>
-                <li class="form-field__list">
-                  <input id="advice" class="visually-hidden form-field__input form-field__input--radio" type="radio"
-                    name="program" value="advice">
-                  <label class="form-field__label" for="advice">Набор массы</label>
+                <li class="form__list">
+                  <input id="help" class="visually-hidden form__input form__radio" type="radio"
+                    name="help" value="advice">
+                  <label class="form__label" for="help">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form-field">
-              <legend class="form-field__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form-field__list">
-                <li class="form-field__item">
-                  <label class="form-field__label" for="name">e-mail:<sup>*</sup></label>
-                  <input id="name" class="form-field__input form-field__input--email" name="name" type="text" placeholder="kuklachev@gmail.com" required>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="name">e-mail:<sup>*</sup></label>
+                  <input id="email" class="form__input form__email" name="email" type="text" placeholder="kuklachev@gmail.com" required>
                 </li>
-                <li class="form-field__list">
-                  <label class="form-field__label form-field__label" for="name">Телефон:<sup>*</sup></label>
-                  <input id="name" class="form-field__input form-field__input--mobile" name="name" type="text" placeholder="8&nbsp;(960)&nbsp;900-60-90"
+                <li class="form__list">
+                  <label class="form__label form__label" for="tel">Телефон:<sup>*</sup></label>
+                  <input id="tel" class="form__input form__mobile" name="tel" type="text" placeholder="8&nbsp;(960)&nbsp;900-60-90"
                     required>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form-field">
-              <legend class="form-field__legend">Коментарий</legend>
-              <textarea class="form-field__textarea" id="text" name="text" cols="30" rows="7"
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Коментарий</legend>
+              <label class="form__label" for="text"></label>
+              <textarea class="form__textarea" id="text" name="text" cols="30" rows="7"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
-            <fieldset class="form-field">
-              <ul class="form-field__list">
-                <li class="form-field__item">
-                  <input id="sweetener" class="visually-hidden form-field__input form-field__input--checkbox" type="checkbox"
-                    name="additions" value="sweetener" checked>
-                  <label class="form-field__label" for="sweetener">сахарозаменитель</label>
+            <fieldset class="form__fieldset">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input id="sweetener" class="visually-hidden form__input form__checkbox" type="checkbox"
+                    name="sweetener" value="sweetener" checked>
+                  <label class="form__label" for="sweetener">сахарозаменитель</label>
                 </li>
-                <li class="form-field__list">
-                  <input id="water" class="visually-hidden form-field__input form-field__input--checkbox" type="checkbox"
-                    name="additions" value="water">
-                  <label class="form-field__label" for="water">питьевая вода</label>
+                <li class="form__list">
+                  <input id="water" class="visually-hidden form__input form__checkbox" type="checkbox"
+                    name="water" value="water">
+                  <label class="form__label" for="water">питьевая вода</label>
                 </li>
-                <li class="form-field__list">
-                  <input id="milk" class="visually-hidden form-field__input form-field__input--checkbox" type="checkbox"
-                    name="additions" value="milk">
-                  <label class="form-field__label" for="milk">молоко</label>
+                <li class="form__list">
+                  <input id="milk" class="visually-hidden form__input form__checkbox" type="checkbox"
+                    name="milk" value="milk">
+                  <label class="form__label" for="milk">молоко</label>
                 </li>
-                <li class="form-field__list">
-                  <input id="vitamins" class="visually-hidden form-field__input form-field__input--checkbox" type="checkbox"
-                    name="additions" value="vitamins">
-                  <label class="form-field__label" for="vitamins">витамины</label>
+                <li class="form__list">
+                  <input id="vitamins" class="visually-hidden form__input form__checkbox" type="checkbox"
+                    name="vitamins" value="vitamins">
+                  <label class="form__label" for="vitamins">витамины</label>
                 </li>
               </ul>
             </fieldset>
