@@ -1,0 +1,34 @@
+.copyright__text {
+  .text();
+  font-size: 16px;
+  text-decoration: none;
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  display: block;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    background-image: url("/source/img/svg/html.svg");
+    background-repeat: no-repeat;
+
+    &::before:hover {
+      fill: @basic-green;
+    }
+
+    &::before:focus,
+    &::before:active {
+      fill: @basic-green;
+      opacity: 0.3;
+    }
+  }
+}
