@@ -1,8 +1,27 @@
+.catalog {
+  &--xtra {
+    margin-bottom: 35px;
+  }
+}
+
 .catalog__list,
 .catalog__list--xtra {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--xtra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 39px;
+  }
 }

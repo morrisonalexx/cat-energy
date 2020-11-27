@@ -1,3 +1,13 @@
+.header {
+  padding-bottom: 17px;
+  padding-top: 11px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__nav-logo {
   display: flex;
 }
@@ -5,4 +15,18 @@
 .header__logo {
   width: 33px;
   height: 38px;
+}
+
+.header__text-logo {
+  width: 101px;
+  height: 18px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
 }

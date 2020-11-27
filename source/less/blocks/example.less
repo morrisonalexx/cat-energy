@@ -1,13 +1,17 @@
 .example__layout {
+  padding-top: 27px;
+  padding-bottom: 25px;
   background-color: @basic-grey;
 }
 
 .example__title {
   .title();
+  margin-bottom: 33px;
 }
 
 .example__description {
   .text();
+  margin-bottom: 25px;
 }
 
 .example__price {
@@ -30,8 +34,10 @@
 }
 
 .example__bar {
-  width: 228px;
+  display: flex;
+  width: 320px;
   height: 40px;
+  margin: 0 auto;
 }
 
 .example__button {
@@ -39,4 +45,20 @@
   line-height: 20px;
   border: none;
   color: @black;
+}
+
+.example__wrapper {
+  display: flex;
+}
+
+.example__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.example__img-wrapper {
+  width: 320px;
+  height: 232px;
+  margin: 0 auto;
 }

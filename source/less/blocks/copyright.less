@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__text {
   .text();
   font-size: 16px;
@@ -11,9 +16,11 @@
 
 .copyright__logo {
   display: block;
+  position: relative;
 
   &::before {
     content: "";
+    position: absolute;
     display: inline-block;
     vertical-align: middle;
     width: 27px;
