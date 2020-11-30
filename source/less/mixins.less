@@ -1,0 +1,61 @@
+/* shadows */
+
+.shadow-normal() {
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.shadow-hover() {
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+.shadow-pressed() {
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.paddings() {
+  padding-left: @phone-padding;
+  padding-right: @phone-padding;
+}
+
+.title() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  color: @black;
+  margin: 0;
+}
+
+.text() {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  margin: 0;
+}
+
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.label() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey;
+}

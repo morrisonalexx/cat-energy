@@ -1,0 +1,56 @@
+.button {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 0;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @basic-green;
+  border: none;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @basic-green-2;
+    color: fade(@white, 30%);
+  }
+
+  &--item-card,
+  &--extra-item,
+  &--promo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: flex-end;
+    padding: 6px 109px;
+  }
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &--show-more {
+    background-color: @basic-grey;
+    color: @special_dark-grey;
+
+    &:hover {
+      background-color: @basic_grey-2;
+    }
+
+    &:focus,
+    &:active {
+      background-color: @basic_grey-2;
+      color: fade(@special_dark-grey, 30%);
+    }
+  }
+}
