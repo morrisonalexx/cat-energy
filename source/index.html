@@ -2,40 +2,48 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+
   </head>
+
   <body class="page-body">
     <header class="header">
-      <div class="header__container container">
-        <a class="header__nav-logo" aria-label="Cat Energy">
-          <img class="header__logo" src="/source/img/svg/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
-          <img class="header__text-logo" src="/source/img/svg/footer-logo.svg" width="101" height="18" alt="Кэт энерджи">
-        </a>
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__nav-logo" aria-label="Cat Energy">
+            <svg class="header__logo" src="source/img/svg/logo-mobile.svg" width="33" height="38"
+              alt="логотип Кэт энерджи"></svg>
+            <svg class="header__text-logo" src="source/img/svg/footer-logo.svg" width="101" height="18" alt="Кэт энерджи"></svg>
+          </a>
 
-        <nav class="nav nav--index">
-          <div class="nav__wrapper">
-            <button class="nav__toggle nav__toggle--hidden" type="button">
-              <span class="nav__toggle-icon">Показать меню</span>
-            </button>
+          <nav class="nav nav__index">
+            <div class="nav__wrapper">
+              <button class="nav__toggle nav__toggle--hidden" type="button">
+                <span class="nav__toggle-icon">Показать меню</span>
+              </button>
 
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link nav__link--active">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav__link--active">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <main class="main main--index">
+    <main class="main main__index">
       <h1 class="visually-hidden">Кэт Энерджи - питание для котов</h1>
 
       <section class="promo">
@@ -43,7 +51,7 @@
           <div class="promo__layout">
             <h2 class="promo__title title">Функциональное питание для котов</h2>
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-            <a class="button button--promo" href="form.html">Подобрать программу</a>
+            <a class="button promo__button" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </section>
@@ -187,10 +195,6 @@
                 aria-label="мы в фейсбуке"></a>
             </li>
           </ul>
-
-          <a class="page-footer__link" aria-label="Cat Energy">
-            <img class="page-footer__logo" src="/source/img/svg/footer-logo.svg" width="101" height="18" alt="Кэт энерджи">
-          </a>
 
           <div class="page-footer__copyright copyright">
             <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
