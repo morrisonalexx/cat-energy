@@ -42,9 +42,9 @@
     </header>
 
     <main class="main form-page">
-      <h1 class="form-page__title title">Подбор программы</h1>
-      <p class="form-page__description title">
-        Заполните анкету, и мы подберем программу питания для вашего кота
+      <h1 class="form-page__title">Подбор программы</h1>
+      <p class="form-page__description">
+        Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
       </p>
 
       <section class="form-block">
@@ -101,7 +101,7 @@
             <div class="fieldset__container container">
               <ul class="fieldset__list">
                 <li class="fieldset__item">
-                  <label class="fieldset__label" for="name">e-mail:<sup>*</sup></label>
+                  <label class="fieldset__label" for="name">e&#8209;mail:<sup>*</sup></label>
                   <input class="fieldset__input fieldset__input--email" id="email" name="email" type="text"
                     placeholder="kuklachev@gmail.com" required>
                 </li>
@@ -116,7 +116,7 @@
 
           <fieldset class="fieldset fieldset--comments">
             <legend class="fieldset__legend fieldset__legend--comment">Коментарий</legend>
-            <label class="fieldset__label" for="text"></label>
+
             <div class="fieldset__container container">
               <textarea class="fieldset__textarea" id="text" name="text" cols="30" rows="7"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -137,7 +137,7 @@
                     value="water">
                   <label class="fieldset__label" for="water">питьевая вода</label>
                 </li>
-                <li class="fieldset__list">
+                <li class="fieldset__item">
                   <input class="visually-hidden fieldset__input fieldset__checkbox" id="milk" type="checkbox" name="milk"
                     value="milk">
                   <label class="fieldset__label" for="milk">молоко</label>
@@ -151,7 +151,7 @@
             </div>
           </fieldset>
 
-          <div class="form__container container">
+          <div class="form__container form__container--button container">
             <button class="form__button button" type="submit">Отправить заявку</button>
             <span><sup>*</sup> — Обязательные поля</span>
           </div>
