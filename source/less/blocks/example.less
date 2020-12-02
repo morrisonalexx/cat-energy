@@ -14,23 +14,34 @@
   margin-bottom: 25px;
 }
 
-.example__price {
-  .title();
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
 .example__number {
   .title();
+  text-align: center;
+  padding-top: 14px;
+  margin-bottom: 15px;
   font-size: 24px;
   line-height: 24px;
+
+  &--weight {
+    padding-left: 43px;
+    padding-right: 42px;
+  }
+
+  &--days {
+    padding-left: 20px;
+    padding-right: 21px;
+  }
 }
 
 .example__profits {
   .text();
+  width: 77px;
+  position: absolute;
+  top: 49px;
+  text-align: center;
   font-size: 12px;
   line-height: 12px;
+  background-color: @basic-grey;
 }
 
 .example__bar {
@@ -49,16 +60,41 @@
 
 .example__wrapper {
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 43px;
 }
 
 .example__box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  border: 1px solid @special_grey;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .example__img-wrapper {
   width: 320px;
   height: 232px;
   margin: 0 auto;
+}
+
+.example__achieves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example__price-wrapper {
+  display: flex;
+}
+
+.example__price {
+  .title();
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }

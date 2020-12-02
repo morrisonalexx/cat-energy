@@ -51,6 +51,7 @@
 }
 
 .label() {
+  display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -58,4 +59,34 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_dark-grey;
+}
+
+.button() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: flex-end;
+  padding: 6px 109px;
+}
+
+.block-title() {
+  .title();
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 22px;
+  background-color: @white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 320px;
+    height: 2px;
+    top: 40px;
+    background-color: @basic-green;
+    z-index: -1;
+  }
 }
