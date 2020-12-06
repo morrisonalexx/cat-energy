@@ -39,6 +39,26 @@
     border-radius: 50%;
     background-color: @basic-green;
   }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 50px;
+    width: 36px;
+    background-image: url("/source/img/svg/cat-slim.svg");
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 50px;
+    width: 36px;
+    background-image: url("/source/img/svg/cat-pro.svg");
+  }
 }
 
 .programs__link {

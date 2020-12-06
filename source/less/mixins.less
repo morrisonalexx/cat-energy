@@ -1,3 +1,18 @@
+/* basic */
+
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* shadows */
 
 .shadow-normal() {
@@ -12,10 +27,36 @@
   box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* paddings */
+
 .paddings() {
   padding-left: @phone-padding;
   padding-right: @phone-padding;
+
+  @media (min-width: @tablets) {
+    padding-left: @tablets-paddings;
+    padding-right: @tablets-paddings;
+  }
+
+  @media (min-width: @desktops) {
+    padding-left: @desktops-paddings;
+    padding-right: @desktops-paddings;
+  }
 }
+
+/* reset-margins */
+
+.reset-margins() {
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* fonts */
 
 .title() {
   font-family: "Oswald", "Arial", sans-serif;
@@ -35,19 +76,6 @@
   line-height: 18px;
   color: @special_dark-grey;
   margin: 0;
-}
-
-.visually-hidden() {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .label() {
