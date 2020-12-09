@@ -33,26 +33,26 @@
   padding-left: @phone-padding;
   padding-right: @phone-padding;
 
-  @media (min-width: @tablets) {
-    padding-left: @tablets-paddings;
-    padding-right: @tablets-paddings;
+  @media (min-width: @tablet) {
+    padding-left: @tablet-padding;
+    padding-right: @tablet-padding;
   }
 
-  @media (min-width: @desktops) {
-    padding-left: @desktops-paddings;
-    padding-right: @desktops-paddings;
+  @media (min-width: @desktop) {
+    padding-left: @desktop-padding;
+    padding-right: @desktop-padding;
   }
 }
 
-/* reset-margins */
-
-.reset-margins() {
-  & > :first-child {
-    margin-top: 0;
+.set-container() {
+  @media (min-width: @tablet) {
+    max-width: @tablet-max-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  & > :last-child {
-    margin-bottom: 0;
+  @media (min-width: @desktop) {
+    max-width: @desktop-max-width;
   }
 }
 
@@ -68,12 +68,32 @@
   margin: 0;
 }
 
+.title-big() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 36px;
+  color: @black;
+  margin: 0;
+}
+
 .text() {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: @special_dark-grey;
+  margin: 0;
+}
+
+.text-big() {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   color: @special_dark-grey;
   margin: 0;
 }

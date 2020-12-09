@@ -11,20 +11,66 @@
 .contacts__box {
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 22px;
+  padding: 28px 19px 28px 19px;
+
+  @media (min-width: @tablet) {
+    padding: 66px 72px 58px 71px;
+  }
+
+  @media (min-width: @desktop) {
+    position: absolute;
+    width: 570px;
+    padding: 66px 89px 51px 76px;
+    z-index: 5;
+    background-color: @white;
+    top: 95px;
+    left: 110px;
+  }
 }
 
 .contacts__title {
   .title();
+  width: 140px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
   .text();
+  width: 140px;
+  display: flex;
+  flex-direction: column;
   line-height: 20px;
   flex-wrap: wrap;
-  font-style: normal;
+
+  @media (min-width: @tablet) {
+    width: 195px;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.contacts__address span:first-child {
+  @media (min-width: @tablet) {
+    margin-bottom: 16px;
+  }
 }
