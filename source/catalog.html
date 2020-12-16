@@ -9,35 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="header header--catalog">
+    <header class="header">
+
       <div class="container">
-        <div class="header__wrapper">
-          <a class="header__nav-logo" aria-label="Cat Energy">
-            <svg class="header__logo" src="source/img/svg/logo-mobile.svg" width="33" height="38"
-              alt="логотип Кэт энерджи"></svg>
-            <svg class="header__text-logo" src="source/img/svg/footer-logo.svg" width="101" height="18" alt="Кэт энерджи"></svg>
+        <div class="header__overlay">
+          <a class="header__logo" aria-label="Cat Energy">
+            <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
           </a>
-
-          <nav class="nav">
-            <div class="nav__wrapper">
-              <button class="nav__toggle nav__toggle--hidden" type="button">
-                <span class="nav__toggle-icon">Показать меню</span>
-              </button>
-
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html" >Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link nav__link--active" >Каталог продукции</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="form.html">Подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <label for="toggle"></label>
         </div>
+
+
+        <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--active">Каталог продукции</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -335,31 +331,34 @@
 
     <footer class="page-footer">
       <div class="page-footer__layout">
-        <div class="page-footer__container container">
-          <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="128" height="24"
+        <div class="page-footer__wrapper container">
+          <img class="page-footer__logo" src="./img/logo-text.svg" width="128" height="24"
             alt="логотип Кэт энерджи">
 
-          <ul class="page-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://www.vkontakte.ru/htmlacademy/" target="_blank"
-                aria-label="мы вконтакте"></a>
-            </li>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://www.vkontakte.ru/htmlacademy/" target="_blank"
+                  aria-label="мы вконтакте"></a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy/" target="_blank"
-                aria-label="мы в инстаграм"></a>
-            </li>
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy/" target="_blank"
+                  aria-label="мы в инстаграм"></a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy/" target="_blank"
-                aria-label="мы в фейсбуке"></a>
-            </li>
-          </ul>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy/" target="_blank"
+                  aria-label="мы в фейсбуке"></a>
+              </li>
+            </ul>
+          </div>
+
 
           <div class="page-footer__copyright copyright">
             <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
               aria-label="сайт HTMLacademy">HTML Academy</a>
-              <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
               aria-label="сайт HTMLacademy"></a>
           </div>
         </div>

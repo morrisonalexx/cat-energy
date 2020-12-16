@@ -1,17 +1,34 @@
 .promo {
-  padding-top: 27px;
+  min-width: 320px;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 302px;
-  background-image: linear-gradient(to bottom, #68b738 70%, white 30%);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 100%, white 30%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 563px;
+    height: 302px;
+    background-image: url("../img/cat-photo-promo.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    z-index: -1;
+  }
 
   @media (min-width: @tablet) {
+    padding-top: 62px;
     background-image: none;
+    min-height: 810px;
+
+    &::before {
+      background-image: none;
+    }
   }
 
   @media (min-width: @desktop) {
     width: 100%;
-    height: 694px;
+    min-height: 694px;
     padding-top: 141px;
     position: absolute;
     top: 0;
@@ -19,6 +36,11 @@
     background-size: cover;
     z-index: 0;
   }
+}
+
+.promo__container {
+  padding-top: 27px;
+  padding-bottom: 22px;
 }
 
 .promo__layout {

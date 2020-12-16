@@ -6,23 +6,18 @@
 
 .catalog__list,
 .catalog__list--xtra {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-disable();
 }
 
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
   &--xtra {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    border-top: 1px solid @border-color;
+    .border-top();
   }
 }
 

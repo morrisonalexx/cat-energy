@@ -5,7 +5,7 @@
   @media (min-width: @tablet) {
     padding-top: 45px;
     padding-bottom: 47px;
-    border-bottom: 1px solid @border-color;
+    .border-bottom();
   }
 
   @media (min-width: @desktop) {
@@ -33,9 +33,7 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  .list-disable();
 
   @media (min-width: @tablet) {
     flex-direction: row;
@@ -146,7 +144,7 @@
       left: 15px;
       width: 30px;
       height: 32px;
-      background-image: url("../img/svg/icon_leaf.svg");
+      background-image: url("../img/icon_leaf.svg");
       display: inline-block;
       vertical-align: middle;
       background-repeat: no-repeat;
@@ -161,7 +159,7 @@
         left: 25px;
         width: 30px;
         height: 32px;
-        background-image: url("../img/svg/icon_leaf.svg");
+        background-image: url("../img/icon_leaf.svg");
         background-repeat: no-repeat;
         z-index: 2;
       }
@@ -208,7 +206,7 @@
       left: 15px;
       width: 29px;
       height: 31px;
-      background-image: url("../img/svg/icon_tub.svg");
+      background-image: url("../img/icon_tub.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }
@@ -221,7 +219,7 @@
         left: 25px;
         width: 29px;
         height: 31px;
-        background-image: url("../img/svg/icon_tub.svg");
+        background-image: url("../img/icon_tub.svg");
         background-repeat: no-repeat;
         z-index: 2;
       }
@@ -249,7 +247,7 @@
         left: 25px;
         width: 29px;
         height: 31px;
-        background-image: url("../img/svg/icon_tub.svg");
+        background-image: url("../img/icon_tub.svg");
         background-repeat: no-repeat;
         z-index: 2;
       }
@@ -280,7 +278,7 @@
       left: 15px;
       width: 25px;
       height: 30px;
-      background-image: url("../img/svg/icon_eat.svg");
+      background-image: url("../img/icon_eat.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }
@@ -338,7 +336,7 @@
       left: 15px;
       width: 32px;
       height: 33px;
-      background-image: url("../img/svg/icon_alarm.svg");
+      background-image: url("../img/icon_alarm.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }

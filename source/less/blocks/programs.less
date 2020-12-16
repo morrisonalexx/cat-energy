@@ -1,5 +1,4 @@
 .programs {
-  padding-top: 82px;
   padding-bottom: 27px;
 
   @media (min-width: @tablet) {
@@ -15,9 +14,7 @@
   display: grid;
   grid-template-rows: min-content min-content;
   row-gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-disable();
 
   @media (min-width: @tablet) {
     row-gap: 30px;
@@ -93,7 +90,7 @@
     left: 6px;
     height: 50px;
     width: 36px;
-    background-image: url("../img/svg/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
     z-index: 2;
 
@@ -102,7 +99,7 @@
       left: 463px;
       height: 192px;
       width: 140px;
-      background-image: url("../img/svg/cat-slim-tabl.svg");
+      background-image: url("../img/cat-slim-tabl.svg");
       background-repeat: no-repeat;
       z-index: 2;
     }
@@ -112,7 +109,7 @@
       left: 13px;
       height: 97px;
       width: 70px;
-      background-image: url("../img/svg/cat-slim-desktop.svg");
+      background-image: url("../img/cat-slim-desktop.svg");
     }
   }
 
@@ -123,7 +120,7 @@
     left: -9px;
     height: 28px;
     width: 67px;
-    background-image: url("../img/svg/cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
     background-repeat: no-repeat;
     z-index: 2;
 
@@ -132,7 +129,7 @@
       left: 363px;
       height: 112px;
       width: 268px;
-      background-image: url("../img/svg/cat-pro-tabl.svg");
+      background-image: url("../img/cat-pro-tabl.svg");
     }
 
     @media (min-width: @desktop) {
@@ -140,7 +137,7 @@
       left: -16px;
       height: 56px;
       width: 134px;
-      background-image: url("../img/svg/cat-pro-desktop.svg");
+      background-image: url("../img/cat-pro-desktop.svg");
     }
   }
 
@@ -172,7 +169,7 @@
     width: 24px;
     height: 12px;
     right: 0;
-    background-image: url("../img/svg/arrow.svg");
+    background-image: url("../img/arrow.svg");
   }
 
   &:focus,
@@ -199,7 +196,7 @@
   margin: 0;
   padding-bottom: 23px;
   margin-bottom: 19px;
-  border-bottom: 1px solid @border-color;
+  .border-bottom();
 
   @media (min-width: @tablet) {
     .text-big();
