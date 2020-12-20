@@ -1,17 +1,16 @@
 .fieldset {
   border: none;
-  padding: 0;
-  margin: 0;
+  .reset-indents();
 
   &--catinfo {
     flex-grow: 3;
     padding-bottom: 27px;
-    border-bottom: 1px solid @border-color;
+    .border-bottom();
   }
 
   &--goal {
     flex-grow: 3;
-    border-bottom: 1px solid @border-color;
+    .border-bottom();
     padding-bottom: 22px;
     padding-top: 22px;
   }
@@ -33,9 +32,7 @@
 }
 
 .fieldset__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-disable();
   display: flex;
   flex-direction: column;
 }
@@ -101,7 +98,7 @@
   position: absolute;
   top: 15px;
   left: 8px;
-  background: url("/source/img/svg/check.svg") no-repeat center;
+  background: url("../img/check.svg") no-repeat center;
   background-repeat: no-repeat;
   background-position: center center;
 }

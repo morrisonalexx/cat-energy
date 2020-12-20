@@ -17,4 +17,41 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: @tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+  align-self: flex-start;
+
+  @media (min-width: @tablet) {
+    width: 163px;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+  }
 }

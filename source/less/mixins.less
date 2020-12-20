@@ -1,21 +1,53 @@
-/* shadows */
+/* basic */
 
-.shadow-normal() {
-  box-shadow: 1px 3px rgba(0, 0, 0, 0.16);
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.shadow-hover() {
-  box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
-}
-
-.shadow-pressed() {
-  box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
-}
+/* paddings */
 
 .paddings() {
   padding-left: @phone-padding;
   padding-right: @phone-padding;
+
+  @media (min-width: @tablet) {
+    padding-left: @tablet-padding;
+    padding-right: @tablet-padding;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: @desktop-padding;
+    padding-right: @desktop-padding;
+  }
 }
+
+.set-container() {
+  @media (min-width: @tablet) {
+    max-width: @tablet-max-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: @desktop-max-width;
+    margin: 0 auto;
+  }
+}
+
+.reset-paddings() {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* fonts */
 
 .title() {
   font-family: "Oswald", "Arial", sans-serif;
@@ -23,6 +55,16 @@
   font-weight: 400;
   font-style: normal;
   line-height: 40px;
+  color: @black;
+  margin: 0;
+}
+
+.title-big() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 36px;
   color: @black;
   margin: 0;
 }
@@ -37,17 +79,14 @@
   margin: 0;
 }
 
-.visually-hidden() {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.text-big() {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: @special_dark-grey;
+  margin: 0;
 }
 
 .label() {
@@ -89,4 +128,23 @@
     background-color: @basic-green;
     z-index: -1;
   }
+}
+
+.list-disable() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.reset-indents() {
+  margin: 0;
+  padding: 0;
+}
+
+.border-top() {
+  border-top: 1px solid @border-color;
+}
+
+.border-bottom() {
+  border-bottom: 1px solid @border-color;
 }

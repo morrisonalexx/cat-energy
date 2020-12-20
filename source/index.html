@@ -3,43 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
-
   </head>
 
   <body class="page-body">
     <header class="header">
+
       <div class="container">
-        <div class="header__wrapper">
-          <a class="header__nav-logo" aria-label="Cat Energy">
-            <svg class="header__logo" src="source/img/svg/logo-mobile.svg" width="33" height="38"
-              alt="логотип Кэт энерджи"></svg>
-            <svg class="header__text-logo" src="source/img/svg/footer-logo.svg" width="101" height="18" alt="Кэт энерджи"></svg>
+        <div class="header__overlay">
+          <a class="header__logo" aria-label="Cat Energy">
+            <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
           </a>
-
-          <nav class="nav">
-            <div class="nav__wrapper">
-              <button class="nav__toggle nav__toggle--hidden" type="button">
-                <span class="nav__toggle-icon">Показать меню</span>
-              </button>
-
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link nav__link--active">Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="form.html">Подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <label for="toggle"></label>
         </div>
+
+
+        <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--active">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -81,16 +74,16 @@
           <h2 class="features__title title">Как это работает</h2>
           <ul class="features__list">
             <li class="features__item">
-              <p class="features__description features__description--natural text">Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="features__description features__description--natural text">Функциональное питание содержит&nbsp;только полезные питательные вещества.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--powder text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.</p>
+              <p class="features__description features__description--powder text">Выпускается в виде порошка, который&nbsp;нужно лишь залить кипятком&nbsp;и&nbsp;готово.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--food text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <p class="features__description features__description--eat text">Замените один-два приема обычной&nbsp;еды на наше функциональное питание.</p>
             </li>
             <li class="features__item">
-              <p class="features__description features__description--profit text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="features__description features__description--profit text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
         </div>
@@ -99,75 +92,67 @@
       <section class="example">
         <div class="example__layout">
           <div class="example__container container">
-            <h2 class="example__title title">Живой пример</h2>
-            <p class="example__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-              спит по 16 часов в день. </p>
+            <div class="example__block">
+              <h2 class="example__title title">Живой пример</h2>
+              <p class="example__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный&nbsp;корм на Cat
+                Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек&nbsp;и&nbsp;по-прежнему&nbsp;
+                спит по 16 часов в день. </p>
 
-            <div class="example__achieves">
-              <div class="example__wrapper">
-                <div class="example__box">
-                  <b class="example__number example__number--weight">5 кг</b>
-                  <small class="example__profits">снижение веса</small>
+              <div class="example__achieves">
+                <div class="example__wrapper">
+                  <div class="example__box">
+                    <b class="example__number example__number--weight">5 кг</b>
+                    <small class="example__profits">снижение веса</small>
+                  </div>
+                  <div class="example__box">
+                    <b class="example__number example__number--days">60 дней</b>
+                    <small class="example__profits">затрачено времени</small>
+                  </div>
                 </div>
-                <div class="example__box">
-                  <b class="example__number example__number--days">60 дней</b>
-                  <small class="example__profits">затрачено времени</small>
-                </div>
-              </div>
 
-              <div class="example__price-wrapper">
-                <span class="example__price">Затраты на питание:</span>
-                <span class="example__price">15&nbsp;000&nbsp;руб.</span>
+                <div class="example__price-wrapper">
+                  <span class="example__price">Затраты на питание:</span>
+                  <span class="example__price">&nbsp;15&nbsp;000&nbsp;руб.</span>
+                </div>
               </div>
             </div>
 
-            <div class="example__compare">
-              <div class="example__img-wrapper">
-                <div class="example__img">
-                  <img src="/source/img/before-mobile.png" width="311" height="232" alt="Было">
+            <div class="example__img-wrapper">
+              <div class="example__slider">
+                <div>
+                  <img class="example__image-before" src="./img/before-mobile.png" width="311" height="232" alt="фото кота до">
                 </div>
-                <div class="example__img example__img--overlay">
-                  <img src="/source/img/after-mobile.png" width="251" height="240" alt="Стало">
-                </div>
+                <img class="example__image-after" src="./img/after-mobile.png" width="251" height="240" alt="фото кота после">
               </div>
 
-              <div class="example__bar">
-                <button class="example__button example__button--before" type="button">Было</button>
-                <div class="example__line">
-                  <input class="example__input" type="range" min="0" max="100" value="50">
-                  <div class="example__toggle"></div>
-                </div>
-                <button class="example__button example__button--after" type="button">Стало</button>
+              <div class="example__button-wrapper">
+                <div class="example__button">Было</div>
+                <div class="example__button">Стало</div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
       <section class="map">
-        <div class="map__layout">
-          <h2 class="visually-hidden">Карта нашего месторасположения</h2>
+        <h2 class="visually-hidden">Карта нашего месторасположения</h2>
 
-          <div class="contacts">
-            <div class="contacts__container container">
-              <h2 class="visually-hidden">Наш адрес</h2>
-              <div class="contacts__box">
-                <p class="contacts__title title">Приглашаем к сотрудничеству дилеров!</p>
-                <address class="contacts__address text">ул. Большая Конюшенная, д. 19/8
-                  <span class="contacts__city text">Санкт-Петербург</span>
-                </address>
-              </div>
-            </div>
+        <div class="contacts">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <div class="contacts__box">
+            <p class="contacts__title title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address text">
+              <span>ул. Большая Конюшенная, д. 19/8</span>
+              <span>Санкт-Петербург</span>
+            </address>
           </div>
+        </div>
 
-          <div class="map__link" id="map">
-            <div class="map__pin">
-              <span class="visually-hidden">
-                Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-              </span>
-            </div>
+        <div class="map__link map__layout" id="map">
+          <div class="map__pin">
+            <span class="visually-hidden">
+              Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </span>
           </div>
         </div>
       </section>
@@ -175,26 +160,29 @@
 
     <footer class="page-footer">
       <div class="page-footer__layout">
-        <div class="page-footer__container container">
-          <img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="128" height="24"
+        <div class="page-footer__wrapper container">
+          <img class="page-footer__logo" src="./img/logo-text.svg" width="128" height="24"
             alt="логотип Кэт энерджи">
 
-          <ul class="page-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://www.vkontakte.ru/htmlacademy/" target="_blank"
-                aria-label="мы вконтакте"></a>
-            </li>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://www.vkontakte.ru/htmlacademy/" target="_blank"
+                  aria-label="мы вконтакте"></a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy/" target="_blank"
-                aria-label="мы в инстаграм"></a>
-            </li>
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy/" target="_blank"
+                  aria-label="мы в инстаграм"></a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy/" target="_blank"
-                aria-label="мы в фейсбуке"></a>
-            </li>
-          </ul>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy/" target="_blank"
+                  aria-label="мы в фейсбуке"></a>
+              </li>
+            </ul>
+          </div>
+
 
           <div class="page-footer__copyright copyright">
             <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
