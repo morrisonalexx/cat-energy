@@ -12,19 +12,8 @@
   background-size: cover;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 41.88%;
-    top: 38.4%;
-    height: 57px;
-    width: 53px;
-    background-image: url("../img/map-pin.svg");
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
   @media (min-width: @tablet) {
+    position: relative;
     height: 400px;
     background-image: url("../img/map-tabl.png");
   }
@@ -32,5 +21,26 @@
   @media (min-width: @desktop) {
     height: 400px;
     background-image: url("../img/map-desk.png");
+  }
+}
+
+.map__pin {
+  position: absolute;
+
+  @media (min-width: @tablet) {
+    content: "";
+    position: absolute;
+    left: 333px;
+    top: 146px;
+    height: 105px;
+    width: 113px;
+    background-image: url("../img/map-pin-tabl.svg");
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  @media (min-width: @desktop) {
+    left: 908px;
+    top: 131px;
   }
 }

@@ -1,25 +1,25 @@
 .promo {
+  position: relative;
   min-width: 320px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100% 302px;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), 100%, white 30%);
+  min-height: 480px;
+  padding-bottom: 22px;
 
   &::before {
     content: "";
     position: absolute;
-    width: 563px;
-    height: 302px;
-    background-image: url("../img/cat-photo-promo.png");
+    width: 100%;
+    min-height: 302px;
+    background-image: url("../img/cat-background.png");
     background-repeat: no-repeat;
-    background-position: 0% 0%;
-    z-index: -1;
+    background-position: 64% 51%;
+    background-size: 176%;
   }
 
   @media (min-width: @tablet) {
-    padding-top: 62px;
+    padding-top: 35px;
     background-image: none;
     min-height: 810px;
+    padding-bottom: 0;
 
     &::before {
       background-image: none;
@@ -29,30 +29,27 @@
   @media (min-width: @desktop) {
     width: 100%;
     min-height: 694px;
-    padding-top: 141px;
-    position: absolute;
-    top: 0;
+    padding-top: 114px;
     background-image: linear-gradient(to right, white 50%, #68b738 50%);
     background-size: cover;
-    z-index: 0;
   }
 }
 
 .promo__container {
   padding-top: 27px;
-  padding-bottom: 22px;
 }
 
 .promo__layout {
+  min-height: 452px;
   position: relative;
   display: flex;
   flex-direction: column;
   background-image: url("../img/index-can-mobile1X.png");
-  background-position: center 75%;
+  background-position: center 76%;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet) {
-    padding-left: 87px;
+    padding-left: 82px;
     height: 810px;
     justify-content: flex-start;
     background-image: url("../img/index-can-tablet.png");
@@ -61,7 +58,7 @@
 
   @media (min-width: @desktop) {
     height: 499px;
-    padding-left: 80px;
+    padding-left: 75px;
     background-image: url("../img/index-can-desktop.png");
     background-position: right 33% top;
   }
@@ -74,18 +71,21 @@
   text-align: center;
   color: @white;
   margin: 0 auto;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet) {
-    width: 414px;
+    padding-left: 5px;
     color: @black;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     margin: 0;
+    margin-bottom: 41px;
+  }
 
-    @media (min-width: @desktop) {
-      padding-top: 82px;
-    }
+  @media (min-width: @desktop) {
+    margin-top: 82px;
+    margin-bottom: 40px;
   }
 }
 
@@ -95,30 +95,41 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 302px;
   text-align: center;
 
   @media (min-width: @tablet) {
+    margin-left: 5px;
     color: @black;
-    padding-top: 41px;
-    padding-bottom: 49px;
+    margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 52px;
   }
 }
 
 .promo__button {
   .button();
+  position: absolute;
+  bottom: 0;
   font-size: 14px;
   line-height: 18px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @media (min-width: @tablet) {
+    position: relative;
     width: 244px;
     font-size: 20px;
     line-height: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 5px;
   }
 }

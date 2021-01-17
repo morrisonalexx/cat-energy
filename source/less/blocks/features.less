@@ -1,23 +1,23 @@
 .features {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 21px;
 
   @media (min-width: @tablet) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 2px;
     .border-bottom();
   }
 
   @media (min-width: @desktop) {
     padding-top: 71px;
-    padding-bottom: 11px;
+    padding-bottom: 0;
     border-bottom: none;
   }
 }
 
 .features__title {
   .title();
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @media (min-width: @tablet) {
     font-size: 60px;
@@ -37,12 +37,13 @@
 
   @media (min-width: @tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 79px;
   }
 
   @media (min-width: @desktop) {
-    flex-direction: row;
-    justify-content: space-between;
+    padding-right: 0;
   }
 }
 
@@ -54,7 +55,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 1px;
     left: 0;
     height: 60px;
     width: 60px;
@@ -62,16 +63,15 @@
   }
 
   @media (min-width: @tablet) {
-    max-width: 250px;
+    max-width: 245px;
     height: 280px;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 37px;
     position: relative;
 
     &::before {
       content: "";
-      top: 34px;
+      top: 33px;
       left: 0;
       height: 80px;
       width: 80px;
@@ -80,8 +80,6 @@
 
   @media (min-width: @desktop) {
     display: flex;
-    height: 280px;
-    max-width: 250px;
     flex-wrap: nowrap;
     margin-bottom: 0;
   }
@@ -90,49 +88,7 @@
 .features__description {
   .text();
   padding-left: 80px;
-
-  @media (min-width: @tablet) {
-    padding-left: 0;
-    padding-top: 151px;
-
-    &::after {
-      content: "1";
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic-grey;
-      z-index: -2;
-    }
-  }
-
-  @media (min-width: @desktop) {
-    &::before {
-      content: "";
-      top: 34px;
-      left: 0;
-      height: 80px;
-      width: 80px;
-    }
-
-    &::after {
-      content: "1";
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic-grey;
-      z-index: -2;
-    }
-  }
+  padding-top: 1px;
 
   &--natural {
     position: relative;
@@ -140,7 +96,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 15px;
+      top: 13px;
       left: 15px;
       width: 30px;
       height: 32px;
@@ -156,7 +112,7 @@
         position: absolute;
         content: "";
         top: 58px;
-        left: 25px;
+        left: 24px;
         width: 30px;
         height: 32px;
         background-image: url("../img/icon_leaf.svg");
@@ -167,8 +123,8 @@
       &::after {
         content: "1";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: 16px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -180,11 +136,16 @@
     }
 
     @media (min-width: @desktop) {
+      &::before {
+        top: 57px;
+        left: 25px;
+      }
+
       &::after {
         content: "1";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: 16px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -202,7 +163,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 15px;
+      top: 12px;
       left: 15px;
       width: 29px;
       height: 31px;
@@ -215,7 +176,7 @@
       &::before {
         position: absolute;
         content: "";
-        top: 58px;
+        top: 57px;
         left: 25px;
         width: 29px;
         height: 31px;
@@ -227,7 +188,7 @@
       &::after {
         content: "2";
         position: absolute;
-        top: 0;
+        bottom: 6px;
         right: 0;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
@@ -241,21 +202,14 @@
 
     @media (min-width: @desktop) {
       &::before {
-        position: absolute;
-        content: "";
-        top: 58px;
+        top: 57px;
         left: 25px;
-        width: 29px;
-        height: 31px;
-        background-image: url("../img/icon_tub.svg");
-        background-repeat: no-repeat;
-        z-index: 2;
       }
 
       &::after {
         content: "2";
         position: absolute;
-        top: 0;
+        bottom: 6px;
         right: 0;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
@@ -274,8 +228,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 15px;
-      left: 15px;
+      top: 14px;
+      left: 18px;
       width: 25px;
       height: 30px;
       background-image: url("../img/icon_eat.svg");
@@ -286,14 +240,14 @@
     @media (min-width: @tablet) {
       &::before {
         top: 58px;
-        left: 25px;
+        left: 28px;
       }
 
       &::after {
         content: "3";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: -2px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -307,14 +261,14 @@
     @media (min-width: @desktop) {
       &::before {
         top: 58px;
-        left: 25px;
+        left: 28px;
       }
 
       &::after {
         content: "3";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: -2px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -332,8 +286,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 15px;
-      left: 15px;
+      top: 12px;
+      left: 14px;
       width: 32px;
       height: 33px;
       background-image: url("../img/icon_alarm.svg");
@@ -343,15 +297,15 @@
 
     @media (min-width: @tablet) {
       &::before {
-        top: 58px;
-        left: 25px;
+        top: 56px;
+        left: 24px;
       }
 
       &::after {
         content: "4";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: -3px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -364,15 +318,15 @@
 
     @media (min-width: @desktop) {
       &::before {
-        top: 58px;
-        left: 25px;
+        top: 56px;
+        left: 24px;
       }
 
       &::after {
         content: "4";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 6px;
+        right: -3px;
         font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -382,5 +336,11 @@
         z-index: -2;
       }
     }
+  }
+
+  @media (min-width: @tablet) {
+    padding-left: 0;
+    padding-top: 146px;
+    .text-big();
   }
 }

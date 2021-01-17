@@ -10,44 +10,46 @@
   </head>
   <body class="page-body">
     <header class="header">
-
       <div class="container">
-        <div class="header__overlay">
-          <a class="header__logo" aria-label="Cat Energy">
-            <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
-          </a>
-          <label for="toggle"></label>
+        <div class="header__wrapper header__wrapper--nojs">
+          <div class="header__overlay">
+            <a class="header__logo" href="index.html" aria-label="Cat Energy">
+              <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
+            </a>
+            <label for="toggle"></label>
+          </div>
+
+          <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link--active">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-
-        <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="index.html">Главная</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--active">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
     <main class="main form-page">
-      <h1 class="form-page__title">Подбор программы</h1>
-      <p class="form-page__description">
-        Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
-      </p>
+      <div class="form-page__container container">
+        <h1 class="form-page__title">Подбор программы</h1>
+        <p class="form-page__description">
+          Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
+        </p>
+      </div>
 
       <section class="form-block">
         <h2 class="visually-hidden">Форма</h2>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-          <div class="form__layout">
+          <div class="form__layout container">
             <fieldset class="fieldset fieldset--catinfo">
               <div class="fieldset__container container">
                 <ul class="fieldset__list">
@@ -56,11 +58,11 @@
                     <input class="fieldset__input" id="name" name="name" type="text" placeholder="Барсик" required>
                   </li>
                   <li class="fieldset__item">
-                    <label class="fieldset__label" for="weight">Вес(кг):<sup>*</sup></label>
+                    <label class="fieldset__label" for="weight">Вес&nbsp;(кг):<sup>*</sup>&nbsp;</label>
                     <input class="fieldset__input" id="weight" name="weight" type="text" placeholder="7" required>
                   </li>
                   <li class="fieldset__item">
-                    <label class="fieldset__label" for="age">Возраст(лет):</label>
+                    <label class="fieldset__label" for="age">Возраст&nbsp;(лет):</label>
                     <input class="fieldset__input" id="age" name="age" type="text" placeholder="7">
                   </li>
                 </ul>
@@ -91,10 +93,10 @@
           </div>
 
           <fieldset class="fieldset fieldset--contacts">
-            <legend class="fieldset__legend fieldset__legend--owner">Контактные данные
-              <span>(владельца кота)</span>
-            </legend>
             <div class="fieldset__container container">
+              <legend class="fieldset__legend fieldset__legend--owner">Контактные данные
+                <span>(владельца кота)</span>
+              </legend>
               <ul class="fieldset__list">
                 <li class="fieldset__item">
                   <label class="fieldset__label" for="name">e&#8209;mail:<sup>*</sup></label>
@@ -111,17 +113,19 @@
           </fieldset>
 
           <fieldset class="fieldset fieldset--comments">
-            <legend class="fieldset__legend fieldset__legend--comment">Коментарий</legend>
-
             <div class="fieldset__container container">
-              <textarea class="fieldset__textarea" id="text" name="text" cols="30" rows="7"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+              <legend class="fieldset__legend fieldset__legend--comment">Комментарий</legend>
+              <div class="fieldset__container fieldset__container--textarea">
+                <textarea class="fieldset__textarea" id="text" name="text" cols="30" rows="7"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset fieldset--additions">
-            <legend class="fieldset__legend fieldset__legend--add">Дополнительно</legend>
             <div class="fieldset__container container">
+              <legend class="fieldset__legend fieldset__legend--add">Дополнительно</legend>
+
               <ul class="fieldset__list">
                 <li class="fieldset__item">
                   <input class="visually-hidden fieldset__input fieldset__checkbox" id="sweetener" type="checkbox"
@@ -149,26 +153,25 @@
 
           <div class="form__container form__container--button container">
             <button class="form__button button" type="submit">Отправить заявку</button>
-            <span><sup>*</sup> — Обязательные поля</span>
+            <span><sup>*</sup>&nbsp;—&nbsp;Обязательные поля</span>
           </div>
         </form>
       </section>
 
       <section class="map">
-        <div class="map__layout">
-          <h2 class="visually-hidden">Карта нашего месторасположения</h2>
-
-          <div class="contacts">
-            <div class="contacts__container container">
-              <h2 class="visually-hidden">Наш адрес</h2>
-              <div class="contacts__box">
-                <p class="contacts__title title">Приглашаем к сотрудничеству дилеров!</p>
-                <address class="contacts__address text">ул. Большая Конюшенная, д. 19/8
-                  <span class="contacts__city text">Санкт-Петербург</span>
-                </address>
-              </div>
+        <div class="contacts">
+          <div class="contacts__container container">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <div class="contacts__box">
+              <p class="contacts__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+                <span class="contacts__city">Санкт-Петербург</span>
+              </address>
             </div>
           </div>
+        </div>
+        <div class="map__layout">
+          <h2 class="visually-hidden">Карта нашего месторасположения</h2>
 
           <div class="map__link" id="map">
             <div class="map__pin">
@@ -184,7 +187,7 @@
     <footer class="page-footer">
       <div class="page-footer__layout">
         <div class="page-footer__wrapper container">
-          <img class="page-footer__logo" src="./img/logo-text.svg" width="128" height="24"
+          <img class="page-footer__logo" src="./img/footer-logo.svg" width="128" height="24"
             alt="логотип Кэт энерджи">
 
           <div class="page-footer__social social">
