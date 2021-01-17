@@ -10,30 +10,30 @@
   </head>
   <body class="page-body">
     <header class="header">
-
       <div class="container">
-        <div class="header__overlay">
-          <a class="header__logo" aria-label="Cat Energy">
-            <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
-          </a>
-          <label for="toggle"></label>
+        <div class="header__wrapper header__wrapper--nojs">
+          <div class="header__overlay">
+            <a class="header__logo" href="index.html" aria-label="Cat Energy">
+              <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
+            </a>
+            <label for="toggle"></label>
+          </div>
+
+          <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link--active">Каталог продукции</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-
-        <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="index.html">Главная</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--active">Каталог продукции</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -305,18 +305,19 @@
       </section>
 
       <section class="map">
-        <div class="map__layout">
-          <h2 class="visually-hidden">Карта нашего месторасположения</h2>
-
-          <div class="contacts">
-            <div class="contacts__container container">
-              <h2 class="visually-hidden">Наш адрес</h2>
-              <div class="contacts__box">
-                <p class="contacts__title title">Приглашаем к сотрудничеству дилеров!</p>
-                <address class="contacts__address text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-              </div>
+        <div class="contacts">
+          <div class="contacts__container container">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <div class="contacts__box">
+              <p class="contacts__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+                <span class="contacts__city">Санкт-Петербург</span>
+              </address>
             </div>
           </div>
+        </div>
+        <div class="map__layout">
+          <h2 class="visually-hidden">Карта нашего месторасположения</h2>
 
           <div class="map__link" id="map">
             <div class="map__pin">
@@ -332,7 +333,7 @@
     <footer class="page-footer">
       <div class="page-footer__layout">
         <div class="page-footer__wrapper container">
-          <img class="page-footer__logo" src="./img/logo-text.svg" width="128" height="24"
+          <img class="page-footer__logo" src="./img/footer-logo.svg" width="128" height="24"
             alt="логотип Кэт энерджи">
 
           <div class="page-footer__social social">

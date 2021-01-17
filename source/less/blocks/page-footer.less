@@ -2,12 +2,22 @@
   padding-top: 39px;
   padding-bottom: 22px;
   background-color: @basic-grey;
+
+  @media (min-width: @tablet) {
+    padding-top: 55px;
+    padding-bottom: 57px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 58px;
+  }
 }
 
 .page-footer__logo {
-  width: 101px;
-  height: 18px;
-  margin-bottom: 32px;
+  width: 128px;
+  height: 24px;
+  margin-bottom: 31px;
 
   &:hover {
     opacity: 0.8;
@@ -48,7 +58,7 @@
   align-self: flex-start;
 
   @media (min-width: @tablet) {
-    width: 163px;
+    width: 164px;
   }
 
   @media (min-width: @desktop) {

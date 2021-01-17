@@ -6,14 +6,40 @@
   .title();
   line-height: 36px;
   padding-top: 27px;
-  padding-left: 20px;
+  padding-left: 0;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet) {
+    .title-xxl();
+    padding-top: 65px;
+    padding-left: 39px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop) {
+    .title-xxl();
+    padding-top: 73px;
+    padding-left: 0;
+    margin-bottom: 56px;
+  }
 }
 
 .form-page__description {
   .title();
   font-size: 14px;
   line-height: 18px;
-  padding-left: 20px;
+  padding-left: 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    width: 363px;
+    .title-xl();
+    padding-top: 16px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 0;
+    padding-top: 0;
+  }
 }
