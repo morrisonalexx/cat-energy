@@ -2,39 +2,40 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body class="page-body">
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper header__wrapper--nojs">
-          <div class="header__overlay">
-            <a class="header__logo" href="index.html" aria-label="Cat Energy">
-              <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
-            </a>
-            <label for="toggle"></label>
-          </div>
 
-          <input class="header__toggle" type="checkbox" id="toggle" name="toggle">
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="index.html">Главная</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link--active">Каталог продукции</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
+      <nav class="header__container container">
+        <input type="checkbox" id="menu-toggle" aria-label="menu">
+        <div class="header__overlay">
+          <a class="header__logo" aria-label="Cat Energy" href="index.html">
+            <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
+          </a>
+
+          <label class="header__toggle" for="menu-toggle">
+            <span class="header__burger"></span>
+            <span class="header__burger"></span>
+            <span class="header__burger"></span>
+          </label>
         </div>
-      </div>
+
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active">Каталог&nbsp;продукции</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="form.html">Подбор&nbsp;программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main catalog-page">

@@ -215,7 +215,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding-right: 47px;
+  padding-right: 57px;
 
   &::before {
     content: "";
@@ -233,6 +233,14 @@
 
     @media (min-width: @desktop) {
       left: 136px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/arrow-long.svg");
     }
   }
 
