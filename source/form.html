@@ -9,11 +9,16 @@
 </head>
 
 <body class="page-body">
-  <header class="header">
+  <header class="header header--form-desktop header--form-tablet">
     <nav class="header__container container">
       <input type="checkbox" id="menu-toggle" aria-label="menu">
       <div class="header__overlay">
-        <a class="header__logo" aria-label="Cat Energy" href="index.html">
+        <a class="header__logo-img" aria-label="Cat Energy" href="index.html">
+          <img width="33" height="38" src="./img/logo-mobile.svg" alt="логотип Кэт энерджи">
+          <img width="60" height="50" src="./img/logo-tablet.svg" alt="логотип Кэт энерджи">
+          <img width="70" height="59" src="./img/logo-desktop.svg" alt="логотип Кэт энерджи">
+        </a>
+        <a class="header__logo-text" aria-label="Cat Energy" href="index.html">
           <img width="101" height="18" src="./img/logo-text.svg" alt="логотип Кэт энерджи">
         </a>
 
@@ -52,44 +57,39 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <div class="form__layout container">
           <fieldset class="fieldset fieldset--catinfo">
-            <div class="fieldset__container container">
-              <ul class="fieldset__list">
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="name">Имя:<sup>*</sup></label>
-                  <input class="fieldset__input" id="name" name="name" type="text" placeholder="Барсик" required>
-                </li>
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="weight">Вес&nbsp;(кг):<sup>*</sup>&nbsp;</label>
-                  <input class="fieldset__input" id="weight" name="weight" type="text" placeholder="7" required>
-                </li>
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="age">Возраст&nbsp;(лет):</label>
-                  <input class="fieldset__input" id="age" name="age" type="text" placeholder="7">
-                </li>
-              </ul>
-            </div>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="fieldset__label" for="name">Имя:<sup>*</sup></label>
+                <input class="fieldset__input" id="name" name="name" type="text" placeholder="Барсик" required>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__label" for="weight">Вес&nbsp;(кг):<sup>*</sup>&nbsp;</label>
+                <input class="fieldset__input" id="weight" name="weight" type="text" placeholder="7" required>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__label" for="age">Возраст&nbsp;(лет):</label>
+                <input class="fieldset__input" id="age" name="age" type="text" placeholder="7">
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="fieldset fieldset--goal">
-            <div class="fieldset__container container">
-              <ul class="fieldset__list">
-                <li class="fieldset__item">
-                  <input class="visually-hidden fieldset__input fieldset__radio" id="weigthloss" type="radio"
-                    name="weigthloss" value="weigthloss" checked>
-                  <label class="fieldset__label fieldset__label" for="weigthloss">Похудение</label>
-                </li>
-                <li class="fieldset__item">
-                  <input class="visually-hidden fieldset__input fieldset__radio" id="weightgain" type="radio"
-                    name="weightgain" value="weightgain">
-                  <label class="fieldset__label fieldset__label--check" for="weightgain">Набор массы</label>
-                </li>
-                <li class="fieldset__item">
-                  <input class="visually-hidden fieldset__input fieldset__radio" id="help" type="radio" name="help"
-                    value="advice">
-                  <label class="fieldset__label fieldset__label--check" for="help">Не знаю (Нужен ваш совет)</label>
-                </li>
-              </ul>
-            </div>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <input class="visually-hidden fieldset__input fieldset__radio" id="weigthloss" type="radio" name="goal"
+                  value="weigthloss" checked>
+                <label class="fieldset__label fieldset__label" for="weigthloss">Похудение</label>
+              </li>
+              <li class="fieldset__item">
+                <input class="visually-hidden fieldset__input fieldset__radio" id="weightgain" type="radio" name="goal"
+                  value="weightgain">
+                <label class="fieldset__label fieldset__label--check" for="weightgain">Набор массы</label>
+              </li>
+              <li class="fieldset__item">
+                <input class="visually-hidden fieldset__input fieldset__radio" id="help" type="radio" name="goal" value="advice">
+                <label class="fieldset__label fieldset__label--check" for="help">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
 
