@@ -124,20 +124,28 @@ if (mainForm) {
   })
 }
 
-//Map
-
-// Initialize and add the map
 function initMap() {
-  // The location of address
-  const address = { lat: 59.93874604080435, lng: 30.323819874581744 };
-  // The map, centered at address
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: address,
+  let coordinates = {lat: 59.938655, lng: 30.323206};
+  let markerImageSmall = "img/map-pin.png";
+  let markerImageBig = "img/map-pin-d.png";
+  let centerMap = {lat: 59.938635, lng: 30.323118};
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: centerMap,
+    disableDefaultUI: true,
+    scrollwheel: false
   });
-  // The marker, positioned at address
-  const marker = new google.maps.Marker({
-    position: address,
+
+  let marker = new google.maps.Marker({
+    position: coordinates,
     map: map,
-  });
-}
+  })
+
+  map.addListener("bounds_changed", () => {
+    if ( window.innerWidth <= 768) {
+      marker.setIcon(markerImageSmall);
+    } else {
+      marker.setIcon(markerImageBig);
+    }
+  })
+};

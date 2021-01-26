@@ -40,19 +40,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
 .selection__additional-data {
   max-width: 1920px;
   margin: 0 auto;
+
+  & .title-page-form {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 57px;
+    }
+  }
 
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
@@ -61,14 +67,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -146,13 +152,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 70px;
-    padding-right: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 70px;
+    padding-right: 70px;
     max-width: 1920px;
     margin: 0 auto;
   }
@@ -691,8 +697,8 @@
   margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 39px;
+    padding-right: 39px;
     margin-left: -40px;
     margin-bottom: 76px;
     font-size: 36px;
@@ -745,6 +751,7 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 32px;
+    .paddings ();
   }
 
   @media (min-width: @desktop-width) {
@@ -1037,6 +1044,10 @@
 }
 
 .selection__contact-wrapper {
+  @media (min-width: @tablet-width) {
+    .paddings ();
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
