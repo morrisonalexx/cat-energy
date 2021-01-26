@@ -1,3 +1,23 @@
 .container {
-  .paddings();
+  @media (max-width: @mobile-width-only) {
+    max-width: @mobile-width-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @full-width) {
+    width: @full-width;
+  }
 }

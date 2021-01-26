@@ -1,0 +1,205 @@
+.advantages {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 28px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid @c-border-menu;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 0;
+    border: none;
+    margin-bottom: 167px;
+  }
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.advantages__shift {
+  @media (min-width: @tablet-width) {
+    padding-left: 10px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+.advantages__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: @c-dark-grey;
+
+  @media (max-width: @mobile-width-only) {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: @c-basic-green;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 77%;
+    min-height: 280px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: @c-basic-green;
+      margin-bottom: 33px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item--useful {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/1.svg");
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 72% 0%;
+  }
+}
+
+.advantages__item--powder {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      background-image: url("../img/icon-tub.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/2.svg");
+    background-repeat: no-repeat;
+    background-position: 89% 0%;
+
+    &::before {
+      background-image: url("../img/icon-tub.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 92% 0%;
+  }
+}
+
+.advantages__item--meal {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/3.svg");
+    background-repeat: no-repeat;
+    background-position: 89% 0%;
+
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 92% 0%;
+  }
+}
+
+.advantages__item--period {
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      background-image: url("../img/icon-alarm.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/4.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 0%;
+
+    &::before {
+      background-image: url("../img/icon-alarm.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 100% 0%;
+  }
+}

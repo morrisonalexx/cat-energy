@@ -39,6 +39,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
-    "bemlint": "^1.7.0"
+    "bemlint": "^1.7.0",
+    "normalize.less": "^1.0.0"
   }
 }

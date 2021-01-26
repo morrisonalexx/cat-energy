@@ -1,0 +1,106 @@
+.surprise {
+  background-color: @c-basic-green;
+  background-size: cover;
+  position: relative;
+  color: @c-white;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-mobile-1.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-mobile-2x.png");
+    }
+
+    &::after {
+      content: "";
+      width: 78px;
+      height: 80px;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      top: 56px;
+      left: calc"(~50% -  @surprise-half-width)";
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    min-height: 200px;
+    background-color: @c-basic-green;
+    background-image: url("../img/gift-photo-tablet.png");
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    padding-bottom: 60px;
+    padding-left: 78px;
+    padding-right: 124px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet-2x.png");
+    }
+
+    &::after {
+      content: "";
+      width: 80px;
+      height: 82px;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop.png");
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 54px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 44px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop-2x.png");
+    }
+
+    &::after {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.surprise__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    width: 161px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 186px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 161px;
+    text-align: center;
+  }
+}
