@@ -13,11 +13,11 @@
     "gulp-postcss": "9.0.0",
     "gulp-rename": "2.0.0",
     "gulp-sourcemaps": "3.0.0",
-    "gulp-svgstore": "7.0.1",
+    "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "3.0.2",
-    "gulp-webp": "4.0.1",
+    "gulp-webp": "^4.0.1",
     "postcss": "8.1.10",
-    "postcss-csso": "5.0.0",
+    "postcss-csso": "^5.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -43,5 +43,9 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "normalize.less": "^1.0.0",
+    "watch": "^1.0.2"
   }
 }
