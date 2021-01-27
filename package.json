@@ -50,7 +50,8 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
-    "bemlint": "^1.7.0"
+    "bemlint": "^1.7.0",
+    "normalize": "^0.3.1"
   },
   "repository": {
     "type": "git",
