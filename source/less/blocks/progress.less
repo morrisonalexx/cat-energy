@@ -1,0 +1,143 @@
+.progress__fact {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  background-color: @c-light-grey;
+  color: @c-dark-grey;
+  order: 2;
+  align-self: center;
+  margin-top: -11px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 87px;
+    padding-left: 13px;
+    margin-top: -9px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @c-white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @c-basic-grey;
+  }
+}
+
+.progress__description {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    border: 1px solid @c-special-grey;
+    padding: 15px 20px 17px 20px;
+    border-radius: 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @c-special-grey;
+    padding: 15px 20px 17px 20px;
+    border-radius: 3px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.progress__cost-description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+    width: 25%;
+    text-align: right;
+    padding-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
+.progress__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: @mobile-width-only) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 45px;
+  }
+}
+
+.progress__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: @mobile-width-only) {
+    width: 124px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 31px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+}
+
+.progress__divider {
+  @media (min-width: @desktop-width) {
+    margin-right: 59px;
+  }
+}

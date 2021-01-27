@@ -1,0 +1,119 @@
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.navigation-list__item {
+  font-size: 20px;
+  line-height: 20px;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid @c-border-menu;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    padding-bottom: 1px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 36px;
+    padding-bottom: 9px;
+    border: none;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+    margin-right: 34px;
+
+    &:first-child {
+      margin-right: 36px;
+      margin-top: 1px;
+    }
+  }
+}
+
+.navigation-list__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @c-border-menu;
+    border-bottom: 1px solid @c-border-menu;
+  }
+}
+
+.navigation-list__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @c-basic-green;
+  }
+}
+
+.navigation-list__item--main {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @c-white;
+  }
+}
+
+.navigation-list__link {
+  color: @c-black;
+  display: block;
+  text-decoration: none;
+  word-break: break-all;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    font-family: "Oswald Medium", "Arial", serif;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 22px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: @c-white;
+  }
+}
+
+
+.navigation-list__link--formpage {
+  color: @c-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -2px;
+    margin-left: 1px;
+  }
+}
