@@ -124,6 +124,8 @@ if (mainForm) {
   })
 }
 
+//Map
+
 function initMap() {
   let coordinates = {lat: 59.938655, lng: 30.323206};
   let markerImageSmall = "img/map-pin.png";
