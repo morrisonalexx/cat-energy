@@ -3,10 +3,11 @@
   "private": true,
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.0.4",
+    "autoprefixer": "^10.2.3",
     "browser-sync": "2.26.13",
     "del": "6.0.0",
     "gulp": "4.0.2",
+    "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "5.0.1",
     "gulp-imagemin": "7.1.0",
     "gulp-less": "4.0.1",
@@ -17,7 +18,7 @@
     "gulp-svgstore": "7.0.1",
     "gulp-uglify": "3.0.2",
     "gulp-webp": "4.0.1",
-    "postcss": "8.1.10",
+    "postcss": "^8.1.10",
     "postcss-csso": "5.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-htmlacademy": "0.1.4"
@@ -49,8 +50,7 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
-    "bemlint": "^1.7.0",
-    "gulp-csso": "^4.0.1"
+    "bemlint": "^1.7.0"
   },
   "repository": {
     "type": "git",
