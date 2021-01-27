@@ -44,5 +44,23 @@
   ],
   "engines": {
     "node": "14.15.0"
-  }
+  },
+  "description": "* Студент: [Александра Моррисон](https://up.htmlacademy.ru/adaptive/21/user/1173371). * Наставник: `Алексей Зольников`.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bemlint": "^1.7.0",
+    "gulp-csso": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morrisonalexx/1173371-cat-energy-21.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morrisonalexx/1173371-cat-energy-21/issues"
+  },
+  "homepage": "https://github.com/morrisonalexx/1173371-cat-energy-21#readme"
 }
