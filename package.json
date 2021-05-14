@@ -16,7 +16,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "3.0.2",
     "gulp-webp": "^4.0.1",
-    "postcss": "8.1.10",
+    "postcss": "8.2.10",
     "postcss-csso": "^5.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-htmlacademy": "0.1.4"
